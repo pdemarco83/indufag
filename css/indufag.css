@@ -247,9 +247,39 @@ section.success {
     .navbar-header a:hover {color: #ff4141;}
 }
 
+#infantiles {
+    text-align: justify;
+    background: url(../img/infantiles/bg.gif);
+}
+
+
 #biosaludables {
     text-align: justify;
-    background: url(../img/biosaludables/background.gif);
+    background: url(../img/biosaludables/bg.gif);
+    color:#313131;
+}
+
+#urbano {
+    text-align: justify;
+    background: url(../img/urbano/bg.gif);
+}
+
+#otros {
+    text-align: justify;
+    background: url(../img/otros/bg.gif);
+}
+
+
+.btn-success {
+    color: #ffffff;
+    background-color: #FF4141;
+    border-color: #FF4141;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success   {
+    color: #ffffff;
+    background-color: #CB2626;
+    border-color: #CB2626;
 }
 
 
@@ -387,67 +417,8 @@ footer .footer-below {
     outline: 0;
 }
 
-.biosaludables-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
 
-.biosaludables-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-.biosaludables-modal .modal-content img {
-    margin-bottom: 30px;
-}
-
-.biosaludables-modal .modal-content .item-details {
-    margin: 30px 0;
-}
-
-.biosaludables-modal .close-modal {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 75px;
-    height: 75px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.biosaludables-modal .close-modal:hover {
-    opacity: .3;
-}
-
-.biosaludables-modal .close-modal .lr {
-    z-index: 1051;
-    width: 1px;
-    height: 75px;
-    margin-left: 35px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.biosaludables-modal .close-modal .lr .rl {
-    z-index: 1052;
-    width: 1px;
-    height: 75px;
-    background-color: #2c3e50;
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-
-/* Home responsive slide OWL CAROUSEL */
+/* OWL CAROUSEL */
 
 .owl-carousel {
     margin-top: 25px;
@@ -455,12 +426,12 @@ footer .footer-below {
 
 .owl-carousel .item {
     text-align: left;
-    display:block;
+    display: block;
     font-size: 2em;
     color: #FFFFFF;
     font-family: 'Arimo', sans-serif;
     letter-spacing: .05em;
-    }
+}
 
 
 .owl-carousel .item span{
@@ -478,4 +449,41 @@ footer .footer-below {
     .owl-carousel .item {
         font-size: 1.5em;
     }
+}
+
+
+#scroll-home .item img, 
+#scroll-infantiles .item img,
+#scroll-biosaludables .item img,
+#scroll-urbano .item img,
+#scroll-otros .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#scroll-infantiles .item,
+#scroll-biosaludables .item,
+#scroll-urbano .item,
+#scroll-otros .item {
+    margin: 3px;
+}
+
+#scroll-infantiles .item img,
+#scroll-biosaludables .item img,
+#scroll-urbano .item img,
+#scroll-otros .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#infantiles .owl-carousel .item,
+#biosaludables .owl-carousel .item,
+#urbano .owl-carousel .item,
+#otros .owl-carousel .item {
+    border: 4px solid #FFFFFF;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
 }
